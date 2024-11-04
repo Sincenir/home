@@ -13,8 +13,8 @@ export const zh = defineConfig({
     nav: nav(),
 
     sidebar: {
-      "/zh/guide/": { base: "/zh/guide/", items: sidebarGuide() },
-      "/zh/reference/": { base: "/zh/reference/", items: sidebarReference() },
+      "/guide/": { base: "/zh/guide/", items: sidebarGuide() },
+      "/reference/": { base: "/zh/reference/", items: sidebarReference() },
     },
 
     editLink: {
@@ -57,8 +57,8 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: "指南",
-      link: "/zh/guide/index",
-      activeMatch: "/zh/guide/",
+      link: "/guide/index",
+      activeMatch: "/guide/",
     },
     // {
     //   text: "参考",
