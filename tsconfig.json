@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "ESNext", // 或 "ES6"
+    "target": "ESNext", // 或 "ES6"
+    "moduleResolution": "Node",
+    "esModuleInterop": true, // 允许与 CommonJS 模块互操作
+    "skipLibCheck": true, // 跳过库文件检查，避免类型错误
+    "types": ["node"] // 确保包含 Node.js 类型
+  }
+}
