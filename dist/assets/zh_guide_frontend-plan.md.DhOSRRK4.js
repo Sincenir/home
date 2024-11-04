@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as n}from"./chunks/framework.CoVXEd1Z.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"zh/guide/frontend-plan.md","filePath":"zh/guide/frontend-plan.md"}'),a={name:"zh/guide/frontend-plan.md"};function r(o,d,s,c,p,i){return n(),t("div")}const _=e(a,[["render",r]]);export{l as __pageData,_ as default};
