@@ -60,24 +60,24 @@ function nav(): DefaultTheme.NavItem[] {
       link: "/zh/guide/index",
       activeMatch: "/zh/guide/",
     },
-    {
-      text: "参考",
-      link: "/zh/reference/site-config",
-      activeMatch: "/zh/reference/",
-    },
-    {
-      text: pkg.version,
-      items: [
-        {
-          text: "更新日志",
-          link: "https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md",
-        },
-        {
-          text: "参与贡献",
-          link: "https://github.com/vuejs/vitepress/blob/main/.github/contributing.md",
-        },
-      ],
-    },
+    // {
+    //   text: "参考",
+    //   link: "/zh/reference/site-config",
+    //   activeMatch: "/zh/reference/",
+    // },
+    // {
+    //   text: pkg.version,
+    //   items: [
+    //     {
+    //       text: "更新日志",
+    //       link: "https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md",
+    //     },
+    //     {
+    //       text: "参与贡献",
+    //       link: "https://github.com/vuejs/vitepress/blob/main/.github/contributing.md",
+    //     },
+    //   ],
+    // },
   ];
 }
 
@@ -88,11 +88,11 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [{ text: "前端学习规划", link: "frontend-plan" }],
     },
-    {
-      text: "写作",
-      collapsed: false,
-      items: [{ text: "国际化", link: "i18n" }],
-    },
+    // {
+    //   text: "写作",
+    //   collapsed: false,
+    //   items: [{ text: "国际化", link: "i18n" }],
+    // },
   ];
 }
 

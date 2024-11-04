@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Runtime API Examples | Sincenir</title>
+    <meta name="description" content="Sincenir 的个人主页">
+    <meta name="generator" content="VitePress v1.4.5">
+    <link rel="preload stylesheet" href="/assets/style.4E3V-uta.css" as="style">
+    
+    <script type="module" src="/assets/app.BPINAD3E.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/assets/chunks/theme.CrQdiKLn.js">
+    <link rel="modulepreload" href="/assets/chunks/framework.CoVXEd1Z.js">
+    <link rel="modulepreload" href="/assets/api-examples.md.DJRPttmy.lean.js">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-8286689f><!--[--><!--]--><!--[--><span tabindex="-1" data-v-b7ee9f11></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-b7ee9f11> Skip to content </a><!--]--><!----><header class="VPNav" data-v-8286689f data-v-2c4bb037><div class="VPNavBar" data-v-2c4bb037 data-v-afb213f4><div class="wrapper" data-v-afb213f4><div class="container" data-v-afb213f4><div class="title" data-v-afb213f4><div class="VPNavBarTitle" data-v-afb213f4 data-v-7ab85f38><a class="title" href="/" data-v-7ab85f38><!--[--><!--]--><!----><span data-v-7ab85f38>Sincenir</span><!--[--><!--]--></a></div></div><div class="content" data-v-afb213f4><div class="content-body" data-v-afb213f4><!--[--><!--]--><div class="VPNavBarSearch search" data-v-afb213f4><!----></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-afb213f4 data-v-4e102380><span id="main-nav-aria-label" class="visually-hidden" data-v-4e102380> Main Navigation </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/zh/guide/index.html" tabindex="0" data-v-4e102380 data-v-4692cf48><!--[--><span data-v-4692cf48>指南</span><!--]--></a><!--]--><!--]--></nav><div class="VPFlyout VPNavBarTranslations translations" data-v-afb213f4 data-v-ae5fca7d data-v-c6fd8dcb><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="多语言" data-v-c6fd8dcb><span class="text" data-v-c6fd8dcb><span class="vpi-languages option-icon" data-v-c6fd8dcb></span><!----><span class="vpi-chevron-down text-icon" data-v-c6fd8dcb></span></span></button><div class="menu" data-v-c6fd8dcb><div class="VPMenu" data-v-c6fd8dcb data-v-c8e68357><!----><!--[--><!--[--><div class="items" data-v-ae5fca7d><p class="title" data-v-ae5fca7d>简体中文</p><!--[--><div class="VPMenuLink" data-v-ae5fca7d data-v-c627e01d><a class="VPLink link" href="/en/api-examples.html" data-v-c627e01d><!--[--><span data-v-c627e01d>English</span><!--]--></a></div><!--]--></div><!--]--><!--]--></div></div></div><div class="VPNavBarAppearance appearance" data-v-afb213f4 data-v-e52d826c><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-e52d826c data-v-2ea09d4a data-v-10ddbcdf><span class="check" data-v-10ddbcdf><span class="icon" data-v-10ddbcdf><!--[--><span class="vpi-sun sun" data-v-2ea09d4a></span><span class="vpi-moon moon" data-v-2ea09d4a></span><!--]--></span></span></button></div><!----><div class="VPFlyout VPNavBarExtra extra" data-v-afb213f4 data-v-9b73bccd data-v-c6fd8dcb><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-c6fd8dcb><span class="vpi-more-horizontal icon" data-v-c6fd8dcb></span></button><div class="menu" data-v-c6fd8dcb><div class="VPMenu" data-v-c6fd8dcb data-v-c8e68357><!----><!--[--><!--[--><div class="group translations" data-v-9b73bccd><p class="trans-title" data-v-9b73bccd>简体中文</p><!--[--><div class="VPMenuLink" data-v-9b73bccd data-v-c627e01d><a class="VPLink link" href="/en/api-examples.html" data-v-c627e01d><!--[--><span data-v-c627e01d>English</span><!--]--></a></div><!--]--></div><div class="group" data-v-9b73bccd><div class="item appearance" data-v-9b73bccd><p class="label" data-v-9b73bccd>主题</p><div class="appearance-action" data-v-9b73bccd><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-9b73bccd data-v-2ea09d4a data-v-10ddbcdf><span class="check" data-v-10ddbcdf><span class="icon" data-v-10ddbcdf><!--[--><span class="vpi-sun sun" data-v-2ea09d4a></span><span class="vpi-moon moon" data-v-2ea09d4a></span><!--]--></span></span></button></div></div></div><!----><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-afb213f4 data-v-b5b101c5><span class="container" data-v-b5b101c5><span class="top" data-v-b5b101c5></span><span class="middle" data-v-b5b101c5></span><span class="bottom" data-v-b5b101c5></span></span></button></div></div></div></div><div class="divider" data-v-afb213f4><div class="divider-line" data-v-afb213f4></div></div></div><!----></header><div class="VPLocalNav empty fixed" data-v-8286689f data-v-4f8005a1><div class="container" data-v-4f8005a1><!----><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-4f8005a1 data-v-a38ea664><button data-v-a38ea664>回到顶部</button><!----></div></div></div><!----><div class="VPContent" id="VPContent" data-v-8286689f data-v-2aeefbb7><div class="VPDoc has-aside" data-v-2aeefbb7 data-v-67a059b9><!--[--><!--]--><div class="container" data-v-67a059b9><div class="aside" data-v-67a059b9><div class="aside-curtain" data-v-67a059b9></div><div class="aside-container" data-v-67a059b9><div class="aside-content" data-v-67a059b9><div class="VPDocAside" data-v-67a059b9 data-v-5822e9b4><!--[--><!--]--><!--[--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-5822e9b4 data-v-ae10f6d1><div class="content" data-v-ae10f6d1><div class="outline-marker" data-v-ae10f6d1></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-ae10f6d1>页面导航</div><ul class="VPDocOutlineItem root" data-v-ae10f6d1 data-v-78994851><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-5822e9b4></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-67a059b9><div class="content-container" data-v-67a059b9><!--[--><!--]--><main class="main" data-v-67a059b9><div style="position:relative;" class="vp-doc _api-examples" data-v-67a059b9><div><h1 id="runtime-api-examples" tabindex="-1">Runtime API Examples <a class="header-anchor" href="#runtime-api-examples" aria-label="Permalink to &quot;Runtime API Examples&quot;">​</a></h1><p>This page demonstrates usage of some of the runtime APIs provided by VitePress.</p><p>The main <code>useData()</code> API can be used to access site, theme, and page data for the current page. It works in both <code>.md</code> and <code>.vue</code> files:</p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;script setup&gt;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">import { useData } from &#39;vitepress&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">const { theme, page, frontmatter } = useData()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;/script&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## Results</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Theme Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;pre&gt;{{ theme }}&lt;/pre&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Page Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;pre&gt;{{ page }}&lt;/pre&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Page Frontmatter</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;pre&gt;{{ frontmatter }}&lt;/pre&gt;</span></span></code></pre></div><h2 id="results" tabindex="-1">Results <a class="header-anchor" href="#results" aria-label="Permalink to &quot;Results&quot;">​</a></h2><h3 id="theme-data" tabindex="-1">Theme Data <a class="header-anchor" href="#theme-data" aria-label="Permalink to &quot;Theme Data&quot;">​</a></h3><pre>{
+  &quot;nav&quot;: [
+    {
+      &quot;text&quot;: &quot;指南&quot;,
+      &quot;link&quot;: &quot;/zh/guide/index&quot;,
+      &quot;activeMatch&quot;: &quot;/zh/guide/&quot;
+    }
+  ],
+  &quot;sidebar&quot;: {
+    &quot;/zh/guide/&quot;: {
+      &quot;base&quot;: &quot;/zh/guide/&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;text&quot;: &quot;简介&quot;,
+          &quot;collapsed&quot;: false,
+          &quot;items&quot;: [
+            {
+              &quot;text&quot;: &quot;前端学习规划&quot;,
+              &quot;link&quot;: &quot;frontend-plan&quot;
+            }
+          ]
+        }
+      ]
+    },
+    &quot;/zh/reference/&quot;: {
+      &quot;base&quot;: &quot;/zh/reference/&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;text&quot;: &quot;参考&quot;,
+          &quot;items&quot;: [
+            {
+              &quot;text&quot;: &quot;站点配置&quot;,
+              &quot;link&quot;: &quot;site-config&quot;
+            },
+            {
+              &quot;text&quot;: &quot;frontmatter 配置&quot;,
+              &quot;link&quot;: &quot;frontmatter-config&quot;
+            },
+            {
+              &quot;text&quot;: &quot;运行时 API&quot;,
+              &quot;link&quot;: &quot;runtime-api&quot;
+            },
+            {
+              &quot;text&quot;: &quot;CLI&quot;,
+              &quot;link&quot;: &quot;cli&quot;
+            },
+            {
+              &quot;text&quot;: &quot;默认主题&quot;,
+              &quot;base&quot;: &quot;/zh/reference/default-theme-&quot;,
+              &quot;items&quot;: [
+                {
+                  &quot;text&quot;: &quot;概览&quot;,
+                  &quot;link&quot;: &quot;config&quot;
+                },
+                {
+                  &quot;text&quot;: &quot;导航栏&quot;,
+                  &quot;link&quot;: &quot;nav&quot;
+                },
+                {
+                  &quot;text&quot;: &quot;侧边栏&quot;,
+                  &quot;link&quot;: &quot;sidebar&quot;
+                },
+                {
+                  &quot;text&quot;: &quot;主页&quot;,
+                  &quot;link&quot;: &quot;home-page&quot;
+                },
+                {
+                  &quot;text&quot;: &quot;页脚&quot;,
+                  &quot;link&quot;: &quot;footer&quot;
+                },
+                {
+                  &quot;text&quot;: &quot;布局&quot;,
+                  &quot;link&quot;: &quot;layout&quot;
+                },
+                {
+                  &quot;text&quot;: &quot;徽章&quot;,
+                  &quot;link&quot;: &quot;badge&quot;
+                },
+                {
+                  &quot;text&quot;: &quot;团队页&quot;,
+                  &quot;link&quot;: &quot;team-page&quot;
+                },
+                {
+                  &quot;text&quot;: &quot;上下页链接&quot;,
+                  &quot;link&quot;: &quot;prev-next-links&quot;
+                },
+                {
+                  &quot;text&quot;: &quot;编辑链接&quot;,
+                  &quot;link&quot;: &quot;edit-link&quot;
+                },
+                {
+                  &quot;text&quot;: &quot;最后更新时间戳&quot;,
+                  &quot;link&quot;: &quot;last-updated&quot;
+                },
+                {
+                  &quot;text&quot;: &quot;搜索&quot;,
+                  &quot;link&quot;: &quot;search&quot;
+                },
+                {
+                  &quot;text&quot;: &quot;Carbon Ads&quot;,
+                  &quot;link&quot;: &quot;carbon-ads&quot;
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  &quot;editLink&quot;: {
+    &quot;pattern&quot;: &quot;https://github.com/Sincenir/home/edit/master/:path&quot;,
+    &quot;text&quot;: &quot;在 GitHub 上编辑此页面&quot;
+  },
+  &quot;footer&quot;: {
+    &quot;message&quot;: &quot;基于 MIT 许可发布&quot;,
+    &quot;copyright&quot;: &quot;版权所有 © 2024-2024 Sincenir&quot;
+  },
+  &quot;docFooter&quot;: {
+    &quot;prev&quot;: &quot;上一页&quot;,
+    &quot;next&quot;: &quot;下一页&quot;
+  },
+  &quot;outline&quot;: {
+    &quot;label&quot;: &quot;页面导航&quot;
+  },
+  &quot;lastUpdated&quot;: {
+    &quot;text&quot;: &quot;最后更新于&quot;,
+    &quot;formatOptions&quot;: {
+      &quot;dateStyle&quot;: &quot;short&quot;,
+      &quot;timeStyle&quot;: &quot;medium&quot;
+    }
+  },
+  &quot;langMenuLabel&quot;: &quot;多语言&quot;,
+  &quot;returnToTopLabel&quot;: &quot;回到顶部&quot;,
+  &quot;sidebarMenuLabel&quot;: &quot;菜单&quot;,
+  &quot;darkModeSwitchLabel&quot;: &quot;主题&quot;,
+  &quot;lightModeSwitchTitle&quot;: &quot;切换到浅色模式&quot;,
+  &quot;darkModeSwitchTitle&quot;: &quot;切换到深色模式&quot;
+}</pre><h3 id="page-data" tabindex="-1">Page Data <a class="header-anchor" href="#page-data" aria-label="Permalink to &quot;Page Data&quot;">​</a></h3><pre>{
+  &quot;title&quot;: &quot;Runtime API Examples&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;frontmatter&quot;: {
+    &quot;outline&quot;: &quot;deep&quot;
+  },
+  &quot;headers&quot;: [],
+  &quot;relativePath&quot;: &quot;api-examples.md&quot;,
+  &quot;filePath&quot;: &quot;api-examples.md&quot;
+}</pre><h3 id="page-frontmatter" tabindex="-1">Page Frontmatter <a class="header-anchor" href="#page-frontmatter" aria-label="Permalink to &quot;Page Frontmatter&quot;">​</a></h3><pre>{
+  &quot;outline&quot;: &quot;deep&quot;
+}</pre><h2 id="more" tabindex="-1">More <a class="header-anchor" href="#more" aria-label="Permalink to &quot;More&quot;">​</a></h2><p>Check out the documentation for the <a href="https://vitepress.dev/reference/runtime-api#usedata" target="_blank" rel="noreferrer">full list of runtime APIs</a>.</p></div></div></main><footer class="VPDocFooter" data-v-67a059b9 data-v-8b348a7e><!--[--><!--]--><div class="edit-info" data-v-8b348a7e><div class="edit-link" data-v-8b348a7e><a class="VPLink link vp-external-link-icon no-icon edit-link-button" href="https://github.com/Sincenir/home/edit/master/api-examples.md" target="_blank" rel="noreferrer" data-v-8b348a7e><!--[--><span class="vpi-square-pen edit-link-icon" data-v-8b348a7e></span> 在 GitHub 上编辑此页面<!--]--></a></div><!----></div><!----></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><footer class="VPFooter" data-v-8286689f data-v-98768f65><div class="container" data-v-98768f65><p class="message" data-v-98768f65>基于 MIT 许可发布</p><p class="copyright" data-v-98768f65>版权所有 © 2024-2024 Sincenir</p></div></footer><!--[--><!--]--></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"api-examples.md\":\"DJRPttmy\",\"index.md\":\"BF5XEoIV\",\"markdown-examples.md\":\"CdEec99Q\",\"zh_guide_frontend-plan.md\":\"DhOSRRK4\",\"zh_guide_index.md\":\"DGOfM1-p\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"en-US\",\"dir\":\"ltr\",\"title\":\"Sincenir\",\"description\":\"Sincnier's Homepage\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{},\"locales\":{\"root\":{\"label\":\"简体中文\",\"lang\":\"zh-Hans\",\"description\":\"Sincenir 的个人主页\",\"themeConfig\":{\"nav\":[{\"text\":\"指南\",\"link\":\"/zh/guide/index\",\"activeMatch\":\"/zh/guide/\"}],\"sidebar\":{\"/zh/guide/\":{\"base\":\"/zh/guide/\",\"items\":[{\"text\":\"简介\",\"collapsed\":false,\"items\":[{\"text\":\"前端学习规划\",\"link\":\"frontend-plan\"}]}]},\"/zh/reference/\":{\"base\":\"/zh/reference/\",\"items\":[{\"text\":\"参考\",\"items\":[{\"text\":\"站点配置\",\"link\":\"site-config\"},{\"text\":\"frontmatter 配置\",\"link\":\"frontmatter-config\"},{\"text\":\"运行时 API\",\"link\":\"runtime-api\"},{\"text\":\"CLI\",\"link\":\"cli\"},{\"text\":\"默认主题\",\"base\":\"/zh/reference/default-theme-\",\"items\":[{\"text\":\"概览\",\"link\":\"config\"},{\"text\":\"导航栏\",\"link\":\"nav\"},{\"text\":\"侧边栏\",\"link\":\"sidebar\"},{\"text\":\"主页\",\"link\":\"home-page\"},{\"text\":\"页脚\",\"link\":\"footer\"},{\"text\":\"布局\",\"link\":\"layout\"},{\"text\":\"徽章\",\"link\":\"badge\"},{\"text\":\"团队页\",\"link\":\"team-page\"},{\"text\":\"上下页链接\",\"link\":\"prev-next-links\"},{\"text\":\"编辑链接\",\"link\":\"edit-link\"},{\"text\":\"最后更新时间戳\",\"link\":\"last-updated\"},{\"text\":\"搜索\",\"link\":\"search\"},{\"text\":\"Carbon Ads\",\"link\":\"carbon-ads\"}]}]}]}},\"editLink\":{\"pattern\":\"https://github.com/Sincenir/home/edit/master/:path\",\"text\":\"在 GitHub 上编辑此页面\"},\"footer\":{\"message\":\"基于 MIT 许可发布\",\"copyright\":\"版权所有 © 2024-2024 Sincenir\"},\"docFooter\":{\"prev\":\"上一页\",\"next\":\"下一页\"},\"outline\":{\"label\":\"页面导航\"},\"lastUpdated\":{\"text\":\"最后更新于\",\"formatOptions\":{\"dateStyle\":\"short\",\"timeStyle\":\"medium\"}},\"langMenuLabel\":\"多语言\",\"returnToTopLabel\":\"回到顶部\",\"sidebarMenuLabel\":\"菜单\",\"darkModeSwitchLabel\":\"主题\",\"lightModeSwitchTitle\":\"切换到浅色模式\",\"darkModeSwitchTitle\":\"切换到深色模式\"}},\"en\":{\"label\":\"English\"}},\"scrollOffset\":134,\"cleanUrls\":false}");</script>
+    
+  </body>
+</html>
