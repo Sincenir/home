@@ -18,13 +18,13 @@ export const zh = defineConfig({
     },
 
     editLink: {
-      pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
+      pattern: "https://github.com/Sincenir/home/edit/master/:path",
       text: "在 GitHub 上编辑此页面",
     },
 
     footer: {
       message: "基于 MIT 许可发布",
-      copyright: `版权所有 © 2019-${new Date().getFullYear()} 尤雨溪`,
+      copyright: `版权所有 © 2024-${new Date().getFullYear()} Sincenir`,
     },
 
     docFooter: {
@@ -57,7 +57,7 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: "指南",
-      link: "/zh/guide/what-is-vitepress",
+      link: "/zh/guide/index",
       activeMatch: "/zh/guide/",
     },
     {
@@ -86,44 +86,13 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
     {
       text: "简介",
       collapsed: false,
-      items: [
-        { text: "什么是 VitePress？", link: "what-is-vitepress" },
-        { text: "快速开始", link: "getting-started" },
-        { text: "路由", link: "routing" },
-        { text: "部署", link: "deploy" },
-      ],
+      items: [{ text: "前端学习规划", link: "frontend-plan" }],
     },
     {
       text: "写作",
       collapsed: false,
-      items: [
-        { text: "Markdown 扩展", link: "markdown" },
-        { text: "资源处理", link: "asset-handling" },
-        { text: "frontmatter", link: "frontmatter" },
-        { text: "在 Markdown 使用 Vue", link: "using-vue" },
-        { text: "国际化", link: "i18n" },
-      ],
+      items: [{ text: "国际化", link: "i18n" }],
     },
-    {
-      text: "自定义",
-      collapsed: false,
-      items: [
-        { text: "自定义主题", link: "custom-theme" },
-        { text: "扩展默认主题", link: "extending-default-theme" },
-        { text: "构建时数据加载", link: "data-loading" },
-        { text: "SSR 兼容性", link: "ssr-compat" },
-        { text: "连接 CMS", link: "cms" },
-      ],
-    },
-    {
-      text: "实验性功能",
-      collapsed: false,
-      items: [
-        { text: "MPA 模式", link: "mpa-mode" },
-        { text: "sitemap 生成", link: "sitemap-generation" },
-      ],
-    },
-    { text: "配置和 API 参考", base: "/zh/reference/", link: "site-config" },
   ];
 }
 
